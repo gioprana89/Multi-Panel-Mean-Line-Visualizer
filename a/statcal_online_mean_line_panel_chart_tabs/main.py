@@ -29,11 +29,11 @@ st.set_page_config(
 
 APP_NAME = "STATCAL ONLINE"
 APP_TITLE = "Panel Mean Line Chart Builder"
-APP_UPDATED = "Last updated on June 19, 2026"
+APP_UPDATED = "Last updated on June 14, 2026"
 WEBSITE_URL = "https://statcal.com/"
-TRAINING_DATA_URL = "https://drive.google.com/drive/folders/1dNywAJBbghQhHDeJZRc9326YDcZZ9IaJ?usp=sharing"
+TRAINING_DATA_URL = "https://drive.google.com/drive/folders/1lg3RDAAfX7ua-zwCTktSqkd4Oa36yZ0R?usp=sharing"
 LOGO_PATH = Path("logo_statcal.png")
-SAMPLE_DATA_PATH = Path("data keuangan.xlsx")
+SAMPLE_DATA_PATH = Path("data_sektor_energi.xlsx")
 BRAND_COLOR = "1F4E79"
 
 STATISTICS_COLUMNS = ["N", "Minimum", "Maximum", "Mean", "Standard Deviation"]
@@ -742,7 +742,7 @@ uploaded_file = st.sidebar.file_uploader(
 
 use_sample_data = False
 if uploaded_file is None and SAMPLE_DATA_PATH.exists():
-    use_sample_data = st.sidebar.checkbox("Use sample data: data keuangan.xlsx", value=True)
+    use_sample_data = st.sidebar.checkbox("Use sample data: data_sektor_energi.xlsx", value=True)
 
 try:
     if uploaded_file is not None:
